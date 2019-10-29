@@ -73,7 +73,7 @@ Inspired by:
 - Highlighted text has to exclusively include complete `ifelse()` statement
 - Lacking any error handling
 - Doesn't handle the case if the last "no" value is some function call with
-  parentheses (e.g., `ifelse(1 != 1, -4, abs(-4)`)
+  parentheses (e.g., `ifelse(1 != 1, -4, abs(-4))`)
 - Limited test coverage for use
 - Code formatting will fail with any text with commas (see below)
 
