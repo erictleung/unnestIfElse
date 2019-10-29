@@ -84,7 +84,7 @@ Inspired by:
 nhst <- ifelse(t_test_p < 0.05, 
                paste("A Welch's independent t test demonstrated significant differences of ", d_interpretation, " effect size in ", DV_name, " between ", sep = ""),
                paste("A Welch's independent t test demonstrated non-significant differences of ", d_interpretation, " effect size between ", sep = ""))
- 
+
 # Another example that will fail
 # Source: https://github.com/wmlutz/r-lesson/blob/master/hold_temp.R
 aw$cert_Admin <- ifelse("Admin" %in% raw[,"Certifications"], 1,0)
@@ -129,33 +129,33 @@ Source: https://github.com/ajpelu/qpyr_resilience/blob/master/R/getComposite.R
 
 ```r
 getComposite_nonleap <- function(m,d){
-  # m = month 
-  # d = day 
+  # m = month
+  # d = day
   ifelse(m == 1 & d < 17, 1,
   ifelse(m == 1 & d >= 17, 2,
-  ifelse(m == 2 & d < 2, 2,      
-  ifelse(m == 2 & d < 18, 3, 
+  ifelse(m == 2 & d < 2, 2,
+  ifelse(m == 2 & d < 18, 3,
   ifelse(m == 2 & d >= 18, 4,
-  ifelse(m == 3 & d < 6, 4, 
-  ifelse(m == 3 & d < 22, 5, 
+  ifelse(m == 3 & d < 6, 4,
+  ifelse(m == 3 & d < 22, 5,
   ifelse(m == 3 & d >= 22, 6,
-  ifelse(m == 4 & d < 7, 6,        
-  ifelse(m == 4 & d < 23, 7, 
+  ifelse(m == 4 & d < 7, 6,
+  ifelse(m == 4 & d < 23, 7,
   ifelse(m == 4 & d >= 23, 8,
-  ifelse(m == 5 & d < 9, 8,       
-  ifelse(m == 5 & d < 25, 9, 
+  ifelse(m == 5 & d < 9, 8,
+  ifelse(m == 5 & d < 25, 9,
   ifelse(m == 5 & d >= 25, 10,
   ifelse(m == 6 & d < 10, 10,
-  ifelse(m == 6 & d < 26, 11, 
+  ifelse(m == 6 & d < 26, 11,
   ifelse(m == 6 & d >= 26, 12,
-  ifelse(m == 7 & d < 12, 12,       
-  ifelse(m == 7 & d < 28, 13, 
+  ifelse(m == 7 & d < 12, 12,
+  ifelse(m == 7 & d < 28, 13,
   ifelse(m == 7 & d >= 28, 14,
   ifelse(m == 8 & d < 13, 14,
-  ifelse(m == 8 & d < 29, 15, 
+  ifelse(m == 8 & d < 29, 15,
   ifelse(m == 8 & d >= 29, 16,
   ifelse(m == 9 & d < 14, 16,
-  ifelse(m == 9 & d < 30, 17, 
+  ifelse(m == 9 & d < 30, 17,
   ifelse(m == 9 & d >= 30, 18,
   ifelse(m == 10 & d < 16, 18,
   ifelse(m == 10 & d >= 16, 19,
