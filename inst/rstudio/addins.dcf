@@ -1,0 +1,4 @@
+Name: Tidy ifelse statements
+Description: Convert nested ifelse() statements to case_when()
+Binding: nestedIfElseToCaseWhen
+Interactive: false

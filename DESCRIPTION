@@ -1,0 +1,15 @@
+Package: unnestIfElse
+Type: Package
+Title: Tidy up nested ifelse statements
+Version: 0.1.0
+Authors@R: person("Eric", "Leung", email = "eric@erictleung.com", role = c("aut", "cre"))
+Description: Convert nested `ifelse()` statements to `case_when()`
+Imports:
+    rstudioapi (>= 0.4),
+    dplyr,
+    stringr,
+    magrittr
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
