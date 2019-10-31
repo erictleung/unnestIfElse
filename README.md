@@ -1,4 +1,4 @@
-# unnestIfElse
+# unnestIfElse [![Build Status](https://travis-ci.org/erictleung/unnestIfElse.svg?branch=master)](https://travis-ci.org/erictleung/unnestIfElse)
 
 RStudio Addin to quickly and roughly convert nested `ifelse()` statements to
 `dplyr::case_when()`.
