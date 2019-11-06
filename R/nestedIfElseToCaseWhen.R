@@ -4,20 +4,6 @@ capture_active <- function() {
   rstudioapi::getSourceEditorContext()
 }
 
-#' @input capture document_context from RStudio API
-#'
-#' Source: https://github.com/seasmith/AlignAssign
-captureArea <- function(capture) {
-  # Find range
-  range_start <- capture$selection[[1L]]$range$start[[1L]]
-  range_end <- capture$selection[[1L]]$range$end[[1L]]
-
-  # Dump contents and use highlighted lines as names.
-  contents <- capture$contents[range_start:range_end]
-  names(contents) <- range_start:range_end
-  return(contents)
-}
-
 #' Tidy ifelse statements
 #'
 #' Convert nested \code{ifelse()} statements to \code{case_when()}.
@@ -30,7 +16,6 @@ captureArea <- function(capture) {
 #' @export
 nestedIfElseToCaseWhen <- function() {
   capture <- capture_active()
-  area <- captureArea(capture)
 
   # Split up if-else statement into vector parts
   if_else_parts <-
