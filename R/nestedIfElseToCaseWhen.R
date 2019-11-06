@@ -32,11 +32,6 @@ nestedIfElseToCaseWhen <- function() {
   capture <- capture_active()
   area <- captureArea(capture)
 
-  # Join all strings into one to make things simpler
-  # if_else_string <- area %>%
-      # trimws() %>%
-      # paste(collapse = "")
-
   # Split up if-else statement into vector parts
   if_else_parts <-
       capture %>%
